@@ -1,3 +1,7 @@
+/* ==============================
+   PLANET - GLOBAL STYLES
+   ============================== */
+
 :root {
   --bg: #f4f7fd;
   --surface: #ffffff;
@@ -12,4 +16,54 @@
   --radius-lg: 18px;
   --radius-md: 12px;
   --max-width: 1160px;
+}
+
+body.dark {
+  --bg: #111a2c;
+  --surface: #202d50;
+  --surface-soft: #16213a;
+  --surface-alt: #92a9db;
+  --text: #f5f7ff;
+  --text-muted: #8999bd;
+  --primary: #1189f4;
+  --primary-dark: #82a6e8;
+  --border: #dbe4f4;
+  --shadow: 0 18px 45px rgba(0, 0, 0, 0.18);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  background: var(--bg);
+  color: var(--text);
+  font-family: "Courier New", Courier, monospace;
+  line-height: 1.5;
+  transition: background-color 0.25s ease, color 0.25s ease;
+}
+
+button,
+input {
+  font: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+.container {
+  width: min(calc(100% - 40px), var(--max-width));
+  margin-inline: auto;
 }
