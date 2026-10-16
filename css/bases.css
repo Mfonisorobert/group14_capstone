@@ -1,0 +1,126 @@
+/* ==============================
+   PLANET - GLOBAL STYLES
+   ============================== */
+
+:root {
+  --bg: #f6f8ff;
+  --surface: #ffffff;
+  --surface-soft: #f0f4fc;
+  --surface-alt: #e4edff;
+  --text: #16202f;
+  --text-muted: #4b6a9b;
+  --primary: #147fe8;
+  --primary-dark: #174ea6;
+  --border: #dce5f2;
+  --shadow: 0 14px 36px rgba(47, 83, 143, 0.1);
+  --radius-lg: 18px;
+  --radius-md: 12px;
+  --max-width: 1160px;
+
+  --font-mono: "Space Mono", monospace;
+  --font-sans: "Inter", system-ui, sans-serif;
+  --radius-card: 15px;
+  --radius-btn: 10px;
+}
+
+body.dark {
+  --bg: #111a2c;
+  --surface: #202d50;
+  --surface-soft: #16213a;
+  --surface-alt: #92a9db;
+  --text: #f5f7ff;
+  --text-muted: #d1e3ff;
+  --primary: #1189f4;
+  --primary-dark: #82a6e8;
+  --border: #dbe4f4;
+  --shadow: 0 18px 45px rgba(0, 0, 0, 0.18);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  background: var(--bg);
+  color: var(--text);
+  font-family: "Courier New", Courier, monospace;
+  line-height: 1.5;
+  transition:background-color 0.25s ease,
+    color 0.25s ease;
+}
+
+button,
+input {
+  font: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+.container {
+  width: min(calc(100% - 40px), var(--max-width));
+  margin-inline: auto;
+}
+
+/*FOOTER*/
+
+.site-footer {
+  font-family: Inter;
+  margin-top: 48px;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 24px;
+  color: var(--text-muted);
+}
+.about h2 {
+  font-size: 20px;
+  font-weight: 500;
+  font-style: Semi Bold;
+  margin-bottom: 16px;
+
+  vertical-align: middle;
+}
+p,
+.members {
+  font-weight: 500;
+  font-style: Medium;
+  font-size: 16px;
+  list-style-type: none;
+}
+li {
+  margin-bottom: 8px;
+}
+.credits {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.credits p {
+  margin: 0;
+}
+.site-footer a {
+  color: inherit;
+  text-decoration: none;
+}
+.site-footer a:hover {
+  text-decoration: underline;
+}
+
+@media (min-width: 768px) {
+  .site-footer {
+    grid-template-columns: 1fr 1fr;
+    gap: 32px;
+  }
+}
