@@ -1,0 +1,8 @@
+.logo {
+    filter: none;
+    
+
+}
+.dark .logo {
+    filter: invert(1)
+}
