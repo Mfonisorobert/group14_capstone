@@ -2,6 +2,41 @@
 
 A responsive planet-information website built with **HTML, CSS and JavaScript**.
 
+This is a Capstone project about Planets. It's a web app that lets you search for any planet and instantly see its details - image, type, mass, gravity, orbit, period, and more. It also has a comparison table for all planets. Data from NASA
+
+
+## Team Members:
+
+Mfoniso Robert https://github.com/Mfonisorobert/
+
+Uchechukwu Princewill Ndubueze https://github.com/PPintentionally1
+
+Umunnakwe Adaeze Vivian https://github.com/Evergreen1bella
+
+Bello Abdulrahman Ohinoyi https://github.com/aohinoyi
+
+Nwankpa Goodnews https://github.com/GoodNyx
+
+Alao Hazzan https://github.com/omba123-pr
+
+Adepoju Samuel https://github.com/Smilee452
+
+Olatuga Samuel https://github.com/glitch-codes
+
+Edim Bond Inyang https://github.com/DocTech007
+
+Elvis Ihimire https://github.com/
+
+Jacklyn Nwachukwu https://github.com/
+
+
+
+
+
+## Work Structure
+
+1. Structuring of the project
+
 ## Project structure
 
 ```text
