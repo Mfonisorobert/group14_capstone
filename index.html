@@ -1,137 +1,233 @@
 <!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Explore the planets and compare facts about our solar system.">
-  <title>Group14 Capstone Project</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/base.css">
-  <link rel="stylesheet" href="css/header.css">
-  <link rel="stylesheet" href="css/search.css">
-  <link rel="stylesheet" href="css/planet-card.css">
-  <link rel="stylesheet" href="css/table.css">
-  <link rel="stylesheet" href="css/footer.css">
-  <link rel="stylesheet" href="css/responsive.css">
-</head>
-<body>
-  <header class="site-header container">
-    <a class="brand" href="./" aria-label="Planet home">
-      <img id="brandLogo" src="images/logo_black.svg" alt="Planet">
-    </a>
-    <button class="theme-toggle" id="themeToggle" type="button" aria-label="Switch to dark mode" aria-pressed="false">
-      <span id="themeLabel">DARK</span>
-      <span class="theme-icon" id="themeIcon" aria-hidden="true"></span>
-    </button>
-  </header>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Explore the planets and compare facts about our solar system."
+    />
+    <title>Group14 Capstone Project</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/base.css" />
+    <link rel="stylesheet" href="css/header.css" />
+    <link rel="stylesheet" href="css/search.css" />
+    <link rel="stylesheet" href="css/planet-card.css" />
+    <link rel="stylesheet" href="css/table.css" />
+    <link rel="stylesheet" href="css/footer.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+  </head>
+  <body>
+    <header class="site-header container">
+      <a class="brand" href="./" aria-label="Planet home">
+        <img id="brandLogo" src="images/logo_black.svg" alt="Planet" />
+      </a>
+      <button
+        class="theme-toggle"
+        id="themeToggle"
+        type="button"
+        aria-label="Switch to dark mode"
+        aria-pressed="false"
+      >
+        <span id="themeLabel">DARK</span>
+        <span class="theme-icon" id="themeIcon" aria-hidden="true"></span>
+      </button>
+    </header>
 
-  <main class="container">
-    <section class="search-section" aria-label="Planet search">
-      <form class="search-bar" id="searchForm">
-        <span class="search-icon" aria-hidden="true">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-            <circle cx="10.8" cy="10.8" r="7"></circle>
-            <path d="m16 16 5 5"></path>
-          </svg>
-        </span>
-        <input id="planetSearch" type="search" placeholder="Search planet name..." autocomplete="off" aria-label="Search planet name">
-        <button type="submit">Search</button>
-      </form>
-      <p class="search-message" id="searchMessage" aria-live="polite"></p>
-    </section>
+    <main class="container">
+      <section class="search-section" aria-label="Planet search">
+        <form class="search-bar" id="searchForm">
+          <span class="search-icon" aria-hidden="true">
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.5"
+            >
+              <circle cx="10.8" cy="10.8" r="7"></circle>
+              <path d="m16 16 5 5"></path>
+            </svg>
+          </span>
+          <input
+            id="planetSearch"
+            type="search"
+            placeholder="Search planet name..."
+            autocomplete="off"
+            aria-label="Search planet name"
+          />
+          <button type="submit">Search</button>
+        </form>
+        <p class="search-message" id="searchMessage" aria-live="polite"></p>
+      </section>
 
-    <section class="planet-card" id="planetCard" aria-live="polite">
-      <div class="planet-image-wrap">
-        <img id="planetImage" src="" alt="">
-      </div>
-      <div class="planet-content">
-        <div class="planet-heading">
-          <div class="planet-title">
-            <h1 id="planetName">Earth</h1>
-            <p id="planetType">Terrestrial</p>
-          </div>
-          <p class="planet-description" id="planetDescription"></p>
+      <section class="planet-card" id="planetCard" aria-live="polite">
+        <div class="planet-image-wrap">
+          <img id="planetImage" src="" alt="" />
         </div>
-        <div class="key-stats" aria-label="Key planetary facts">
-          <div class="key-stat"><span>Gravity</span><strong id="gravity"></strong></div>
-          <div class="key-stat"><span>Mass</span><strong id="mass"></strong></div>
-          <div class="key-stat"><span>Period</span><strong id="period"></strong></div>
+        <div class="planet-content">
+          <div class="planet-heading">
+            <div class="planet-title">
+              <h1 id="planetName">Earth</h1>
+              <p id="planetType">Terrestrial</p>
+            </div>
+            <p class="planet-description" id="planetDescription"></p>
+          </div>
+          <div class="key-stats" aria-label="Key planetary facts">
+            <div class="key-stat">
+              <span>Gravity</span><strong id="gravity"></strong>
+            </div>
+            <div class="key-stat">
+              <span>Mass</span><strong id="mass"></strong>
+            </div>
+            <div class="key-stat">
+              <span>Period</span><strong id="period"></strong>
+            </div>
+          </div>
+          <div class="secondary-stats">
+            <div class="secondary-stat">
+              <svg
+                class="stat-svg thermometer"
+                viewBox="0 0 24 24"
+                aria-hidden="true"
+              >
+                <path d="M14 14.8V5a3 3 0 0 0-6 0v9.8a5 5 0 1 0 6 0Z"></path>
+                <path d="M11 7v9"></path>
+                <path d="M17 5h4M17 9h3"></path>
+              </svg>
+              <span id="temperature"></span>
+            </div>
+            <div class="secondary-stat">
+              <svg
+                class="stat-svg moon-svg"
+                viewBox="0 0 24 24"
+                aria-hidden="true"
+              >
+                <path
+                  d="M20.4 15.3A8.5 8.5 0 0 1 8.7 3.6 8.7 8.7 0 1 0 20.4 15.3Z"
+                  fill="currentColor"
+                  stroke="none"
+                ></path>
+              </svg>
+              <span id="moons"></span>
+            </div>
+            <div class="secondary-stat">
+              <svg
+                class="stat-svg circle-svg"
+                viewBox="0 0 24 24"
+                aria-hidden="true"
+              >
+                <circle
+                  cx="12"
+                  cy="12"
+                  r="9"
+                  fill="currentColor"
+                  stroke="none"
+                ></circle>
+              </svg>
+              <span id="diameter"></span>
+            </div>
+            <div class="secondary-stat">
+              <svg
+                class="stat-svg sun-svg"
+                viewBox="0 0 24 24"
+                aria-hidden="true"
+              >
+                <circle cx="12" cy="12" r="3.5"></circle>
+                <path
+                  d="M12 2v3M12 19v3M2 12h3M19 12h3M4.9 4.9 7 7M17 17l2.1 2.1M19.1 4.9 17 7M7 17l-2.1 2.1"
+                ></path>
+                <path
+                  d="m9 3 .7 1.8M15 19.2 15.7 21M3 9l1.8.7M19.2 14.3 21 15M3 15l1.8-.7M19.2 9.7 21 9M9 21l.7-1.8M15 4.8 15.7 3"
+                ></path>
+              </svg>
+              <span id="distance"></span>
+            </div>
+          </div>
         </div>
-        <div class="secondary-stats">
-          <div class="secondary-stat">
-            <svg class="stat-svg thermometer" viewBox="0 0 24 24" aria-hidden="true"><path d="M14 14.8V5a3 3 0 0 0-6 0v9.8a5 5 0 1 0 6 0Z"></path><path d="M11 7v9"></path><path d="M17 5h4M17 9h3"></path></svg>
-            <span id="temperature"></span>
-          </div>
-          <div class="secondary-stat">
-            <svg class="stat-svg moon-svg" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.4 15.3A8.5 8.5 0 0 1 8.7 3.6 8.7 8.7 0 1 0 20.4 15.3Z" fill="currentColor" stroke="none"></path></svg>
-            <span id="moons"></span>
-          </div>
-          <div class="secondary-stat">
-            <svg class="stat-svg circle-svg" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9" fill="currentColor" stroke="none"></circle></svg>
-            <span id="diameter"></span>
-          </div>
-          <div class="secondary-stat">
-            <svg class="stat-svg sun-svg" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="3.5"></circle><path d="M12 2v3M12 19v3M2 12h3M19 12h3M4.9 4.9 7 7M17 17l2.1 2.1M19.1 4.9 17 7M7 17l-2.1 2.1"></path><path d="m9 3 .7 1.8M15 19.2 15.7 21M3 9l1.8.7M19.2 14.3 21 15M3 15l1.8-.7M19.2 9.7 21 9M9 21l.7-1.8M15 4.8 15.7 3"></path></svg>
-            <span id="distance"></span>
-          </div>
+      </section>
+
+      <section class="facts-section">
+        <div class="section-heading">
+          <h2>Planetary Facts at a Glance</h2>
+          <p>
+            Below is a comparative table of major planets in our solar system.
+            The data highlights key physical properties used by astronomers and
+            researchers worldwide.
+          </p>
         </div>
-      </div>
-    </section>
+        <p class="table-caption">
+          Data about the planets of our solar system (Planetary facts taken from
+          NASA)
+        </p>
+        <div class="table-wrapper">
+          <table>
+            <colgroup>
+              <col class="group-col" />
+              <col class="subgroup-col" />
+              <col class="name-col" />
+              <col class="mass-col" />
+              <col class="diameter-col" />
+            </colgroup>
+            <thead>
+              <tr>
+                <th colspan="2" aria-label="Planet category"></th>
+                <th>Name</th>
+                <th>Mass (10<sup>24</sup>kg)</th>
+                <th>Diameter (km)</th>
+              </tr>
+            </thead>
+            <tbody id="planetTableBody"></tbody>
+          </table>
+        </div>
+      </section>
+    </main>
 
-    <section class="facts-section">
-      <div class="section-heading">
-        <h2>Planetary Facts at a Glance</h2>
-        <p>Below is a comparative table of major planets in our solar system. The data highlights key physical properties used by astronomers and researchers worldwide.</p>
+    <footer class="site-footer container">
+      <div class="footer-about">
+        <h3>About</h3>
+        <p>Built as a collaborative front-end capstone project.</p>
+        <!-- <p id="teamNames">This Capstone Project is developed by the following group members:</p> -->
+        <!-- <p id="teamNames">Team members: <br>Robert, Princewill, Vivian, Abdulrahman, Goodnews, Hazzan, Samuel, Olatuga, Bond, Ihimire, Nwachukwu</p> -->
+        <ul class="members" id="teamNames">
+          <b>Team members:</b>
+          <li>Robert</li>
+          <li>Princewill</li>
+          <li>Vivian</li>
+          <li>Abdulrahman</li>
+          <li>Goodnews Ikechukwu Nwankpa</li>
+          <li>Hazzan</li>
+          <li>Samuel</li>
+          <li>Olatuga</li>
+          <li>Bond</li>
+          <li>Ihimire</li>
+          <li>Nwachukwu</li>
+        </ul>
       </div>
-      <p class="table-caption">Data about the planets of our solar system (Planetary facts taken from NASA)</p>
-      <div class="table-wrapper">
-        <table>
-          <colgroup>
-            <col class="group-col"><col class="subgroup-col"><col class="name-col"><col class="mass-col"><col class="diameter-col">
-          </colgroup>
-          <thead>
-            <tr><th colspan="2" aria-label="Planet category"></th><th>Name</th><th>Mass (10<sup>24</sup>kg)</th><th>Diameter (km)</th></tr>
-          </thead>
-          <tbody id="planetTableBody"></tbody>
-        </table>
+      <div class="footer-right">
+        <p>© <span id="year"></span> Design by Amaka N</p>
+        <p>
+          Built by
+          <a
+            href="https://github.com/Mfonisorobert/group14_capstone.git"
+            rel="noopener"
+            >Group 14</a
+          >. All rights reserved
+        </p>
+        <p>
+          <a href="https://tsacademyonline.com/" rel="noopener">TSAcademy</a>
+        </p>
       </div>
-    </section>
-  </main>
+    </footer>
 
-  <footer class="site-footer container">
-    <div class="footer-about">
-      <h3>About</h3>
-      <p>Built as a collaborative front-end capstone project.</p>
-      <!-- <p id="teamNames">This Capstone Project is developed by the following group members:</p> -->
-      <!-- <p id="teamNames">Team members: <br>Robert, Princewill, Vivian, Abdulrahman, Goodnews, Hazzan, Samuel, Olatuga, Bond, Ihimire, Nwachukwu</p> -->
-      <ul class="members" id="teamNames">
-        <b>Team members:</b>
-        <li>Robert</li>
-        <li>Princewill</li>
-        <li>Vivian</li>
-        <li>Abdulrahman</li>
-        <li>Goodnews</li>
-        <li>Hazzan</li>
-        <li>Samuel</li>
-        <li>Olatuga</li>
-        <li>Bond</li>
-        <li>Ihimire</li>
-        <li>Nwachukwu</li>
-      </ul>
-    </div>
-    <div class="footer-right">
-      <p>© <span id="year"></span> Design by Amaka N</p>
-      <p>Built by <a href="https://github.com/Mfonisorobert/group14_capstone.git" rel="noopener">Group 14</a>. All rights reserved</p>
-      <p><a href="https://tsacademyonline.com/"  rel="noopener">TSAcademy</a></p>
-    </div>
-  </footer>
-
-  <script src="javascript/data.js"></script>
-  <script src="javascript/theme.js"></script>
-  <script src="javascript/planet-card.js"></script>
-  <script src="javascript/search.js"></script>
-  <script src="javascript/table.js"></script>
-</body>
+    <script src="javascript/data.js"></script>
+    <script src="javascript/theme.js"></script>
+    <script src="javascript/planet-card.js"></script>
+    <script src="javascript/search.js"></script>
+    <script src="javascript/table.js"></script>
+  </body>
 </html>
