@@ -31,9 +31,50 @@ Jacklyn Nwachukwu https://github.com/Jacklyn-Nwachukwu
 
 
 
-## Work Structure
+## Team Members and Task
 
-1. Structuring of the project
+1.  ## Robert (Team Lead) 
+    Structuring of the project
+    responsive.css
+    data.js
+    planet-card.js
+    table.js
+    theme.js
+    base.css
+    setting up GitHub 
+    Merging PR
+
+2.  ## Princewill (Assistant Team Lead)
+    Table HTML/CSS
+    Planet-card.css
+
+3.  ## Vivian
+    Table HTML
+
+4.  ## Abdulrahman
+    Footer HTML/CSS
+
+5.  ## Goodnews
+    Header HTML/CSS
+
+6.  ## Hazzan
+    data.js
+
+7.  ## Samuel
+    Header HTML/CSS
+
+8.  ## Olatuga
+    search.js
+
+9.  ## Bond
+    theme.js
+
+10. ## Ihimire
+    table.js
+
+11. ## Jacklyn
+    search.css
+    search.js
 
 
 
