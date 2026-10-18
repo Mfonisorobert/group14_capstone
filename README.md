@@ -7,7 +7,7 @@ This is a Capstone project about Planets. It's a web app that lets you search fo
 
 ## Team Members:
 
-Mfoniso Robert https://github.com/Mfonisorobert/
+Mfoniso Robert https://github.com/Mfonisorobert
 
 Uchechukwu Princewill Ndubueze https://github.com/PPintentionally1
 
@@ -25,9 +25,9 @@ Olatuga Samuel https://github.com/glitch-codes
 
 Edim Bond Inyang https://github.com/DocTech007
 
-Elvis Ihimire https://github.com/
+Elvis Ihimire https://github.com/elviswise030
 
-Jacklyn Nwachukwu https://github.com/
+Jacklyn Nwachukwu https://github.com/Jacklyn-Nwachukwu
 
 
 
@@ -39,50 +39,7 @@ Jacklyn Nwachukwu https://github.com/
 
 ## Project structure
 
-```text
-GROUP14_CAPSTONE/
-├── index.html
-├── README.md
-├── css/
-│   ├── base.css
-│   ├── header.css
-│   ├── search.css
-│   ├── planet-card.css
-│   ├── table.css
-│   ├── footer.css
-│   └── responsive.css
-├── javascript/
-│   ├── data.js
-│   ├── theme.js
-│   ├── planet-card.js
-│   ├── search.js
-│   └── table.js
-└── images/
-    ├── logo_black.svg
-    └── logo.svg
-```
-
-## What each file does
-
-- `index.html`: page structure and links to styles/scripts.
-- `css/base.css`: global colors, typography, reset and shared layout.
-- `css/header.css`: logo and light/dark theme control.
-- `css/search.css`: planet search bar and feedback messages.
-- `css/planet-card.css`: selected planet information and icons.
-- `css/table.css`: planetary comparison table.
-- `css/footer.css`: footer layout.
-- `css/responsive.css`: tablet and mobile adjustments.
-- `javascript/data.js`: shared planet information.
-- `javascript/theme.js`: theme switching, exact supplied SVG logo switching and saved preference.
-- `javascript/planet-card.js`: updates the planet information card.
-- `javascript/search.js`: search behavior.
-- `javascript/table.js`: builds the table and handles row selection.
-- `images/logo_black.svg`: supplied black logo for light mode.
-- `images/logo.svg`: supplied white logo for dark mode.
-
-## Team workflow
-
-### Ground rules
+## Team workflow & Ground rules
 
 1. Do not work directly on `main`.
 2. Pull the latest `main` before starting a new task.
@@ -92,36 +49,7 @@ GROUP14_CAPSTONE/
 6. Open a Pull Request from your branch into `main`.
 7. The team lead reviews and merges Pull Requests.
 
-### First time on a member's computer
-
-```bash
-git clone https://github.com/Mfonisorobert/GROUP14_CAPSTONE.git
-cd GROUP14_CAPSTONE
-git switch -c feature/your-task
-```
-
-Replace the URL with the actual repository URL and replace `feature/your-task` with the branch assigned to you.
-
-### Save and share your work
-
-```bash
-git status
-git add .
-git commit -m "Describe the change"
-git push -u origin feature/your-task
-```
-
-Then open GitHub and create a Pull Request targeting `main`.
-
-### Start a new task later
-
-```bash
-git switch main
-git pull origin main
-git switch -c feature/new-task
-```
-
-### Suggested task branches
+### Task branches
 
 - `feature/header-theme`
 - `feature/search`
