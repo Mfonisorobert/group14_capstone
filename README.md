@@ -35,18 +35,18 @@ Jacklyn Nwachukwu https://github.com/Jacklyn-Nwachukwu
 
 1.  ## Robert (Team Lead) 
     Structuring of the project
-    responsive.css
-    data.js
-    planet-card.js
-    table.js
-    theme.js
-    base.css
-    setting up GitHub 
-    Merging PR
+    | responsive.css
+    | data.js
+    | planet-card.js
+    | table.js
+    | theme.js
+    | base.css
+    | setting up GitHub 
+    | Merging PR
 
 2.  ## Princewill (Assistant Team Lead)
     Table HTML/CSS
-    Planet-card.css
+    | Planet-card.css
 
 3.  ## Vivian
     Table HTML
@@ -74,7 +74,7 @@ Jacklyn Nwachukwu https://github.com/Jacklyn-Nwachukwu
 
 11. ## Jacklyn
     search.css
-    search.js
+    | search.js
 
 
 
