@@ -31,23 +31,11 @@ Jacklyn Nwachukwu https://github.com/Jacklyn-Nwachukwu
 
 
 
-
-
 ## Work Structure
 
 1. Structuring of the project
 
-## Project structure
 
-## Team workflow & Ground rules
-
-1. Do not work directly on `main`.
-2. Pull the latest `main` before starting a new task.
-3. Create a branch for your task.
-4. Work mainly in the files assigned to you.
-5. Commit and push your branch.
-6. Open a Pull Request from your branch into `main`.
-7. The team lead reviews and merges Pull Requests.
 
 ### Task branches
 
@@ -57,6 +45,18 @@ Jacklyn Nwachukwu https://github.com/Jacklyn-Nwachukwu
 - `feature/planet-table`
 - `feature/footer`
 - `feature/responsive`
+
+
+## Project structure
+## Team workflow & Ground rules
+
+1. Do not work directly on `main`.
+2. Pull the latest `main` before starting a new task.
+3. Create a branch for your task.
+4. Work mainly in the files assigned to you.
+5. Commit and push your branch.
+6. Open a Pull Request from your branch into `main`.
+7. The team lead reviews and merges Pull Requests.
 
 ## Coordination notes
 
