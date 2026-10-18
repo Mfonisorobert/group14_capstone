@@ -3,13 +3,13 @@
   margin: 0 0 4px;
   color: var(--heading);
   font-family: var(--sans);
-  font-size: 17px;
+  font-size: 18px;
   line-height: 1.35;
   font-weight: 600;
   letter-spacing: -.4px;
 }
-.section-heading p { margin: 0; color: var(--text); font-size: 10px; line-height: 1.55; }
-.table-caption { margin: 13px 0 8px; color: var(--text); font-size: 9px; font-weight: 600; line-height: 1.4; }
+.section-heading p { margin: 0; color: var(--text); font-size: 12px; line-height: 1.55; }
+.table-caption { margin: 13px 0 8px; color: var(--text); font-size: 12px; font-weight: 600; line-height: 1.4; }
 .table-wrapper { width: 100%; overflow: hidden; border-radius: 9px; border: 1px solid var(--table-border); }
 table { width: 100%; table-layout: fixed; border-collapse: separate; border-spacing: 0; background: var(--surface-soft); }
 .group-col { width: 18%; }
