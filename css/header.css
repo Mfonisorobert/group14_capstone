@@ -1,11 +1,19 @@
 .site-header {
-  height: 68px;
+  height: 70px;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-.brand { display: inline-flex; align-items: center; width: 68px; }
-.brand img { display: block; width: 68px; height: auto; }
+.brand {
+  display: inline-flex;
+  align-items: center;
+  width: 68px;
+}
+.brand img {
+  display: block;
+  width: 68px;
+  height: auto;
+}
 .theme-toggle {
   display: inline-flex;
   align-items: center;
@@ -19,5 +27,13 @@
   font-size: 8px;
   letter-spacing: 1.5px;
 }
-.theme-icon { width: 16px; height: 16px; display: grid; place-items: center; }
-.theme-icon svg { width: 14px; height: 14px; }
+.theme-icon {
+  width: 16px;
+  height: 16px;
+  display: grid;
+  place-items: center;
+}
+.theme-icon svg {
+  width: 14px;
+  height: 14px;
+}

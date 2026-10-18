@@ -7,29 +7,28 @@
   padding: 2px 1px 17px;
   color: var(--text);
 }
-.site-footer h3 { 
-  margin: 0 0 10px; 
-  font-size: 12px; 
-  font-weight: 500; 
+.site-footer h3 {
+  margin: 0 0 10px;
+  font-size: 12px;
+  font-weight: 500;
 }
-.site-footer p { 
-  margin: 2px 0; 
-  font-size: 8px; 
-  line-height: 1.45; 
+.site-footer p {
+  margin: 2px 0;
+  font-size: 8px;
+  line-height: 1.45;
 }
-.footer-about { 
-  max-width: 48%; 
+.footer-about {
+  max-width: 48%;
 }
-.footer-right { 
-  max-width: 52%; 
+.footer-right {
+  max-width: 52%;
   text-align: left;
 }
-.members { 
-  margin: 0; 
-  padding: 0; 
-  list-style: none; 
-  font-size: 8px; 
-  
+.members {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-size: 8px;
 }
 .footer-right a {
   color: inherit;
