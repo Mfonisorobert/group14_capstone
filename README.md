@@ -77,7 +77,6 @@ Jacklyn Nwachukwu https://github.com/Jacklyn-Nwachukwu
     | search.js
 
 
-
 ### Task branches
 
 - `feature/header-theme`
