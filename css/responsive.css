@@ -1,0 +1,65 @@
+/* @media (min-width: 700px) {
+  .site-header { height: 82px; }
+  .brand, .brand img { width: 82px; }
+  .search-section { margin-bottom: 24px; }
+  .search-bar { height: 46px; padding-left: 16px; }
+  .search-bar button { flex-basis: 72px; height: 32px; }
+  .planet-card { grid-template-columns: 76px minmax(0, 1fr); gap: 20px; padding: 28px; min-height: 230px; }
+  .planet-image-wrap { width: 76px; height: 76px; }
+  .planet-title h1 { font-size: 17px; }
+  .planet-description { font-size: 10px; }
+  .key-stats { padding: 11px 13px; }
+  .key-stat span { font-size: 8px; }
+  .key-stat strong { font-size: 14px; }
+  .secondary-stat { font-size: 9px; }
+  .stat-svg { width: 15px; height: 15px; flex-basis: 15px; }
+  .section-heading h2 { font-size: 21px; }
+  .section-heading p { font-size: 12px; }
+  .table-caption { font-size: 10px; }
+  th, td { font-size: 10px; padding: 10px 5px; }
+  thead th { font-size: 9px; height: 38px; }
+  tbody td { height: 40px; }
+  .site-footer h3 { font-size: 13px; }
+  .site-footer p { font-size: 9px; }
+}
+@media (max-width: 360px) {
+  .container { width: calc(100% - 20px); }
+  .planet-card { grid-template-columns: 48px minmax(0, 1fr); gap: 11px; padding: 15px; }
+  .planet-image-wrap { width: 48px; height: 48px; }
+  .key-stat strong { font-size: 10px; }
+  .secondary-stats { column-gap: 7px; }
+  .table-caption { font-size: 8px; }
+  th, td { font-size: 7px; padding: 6px 2px; }
+  thead th { font-size: 6px; }
+} */
+
+
+@media(max-width:850px){ 
+  .planet-card{grid-template-columns:1fr;padding:30px}
+  .planet-image-wrap{width:115px;height:115px}
+  .planet-heading{grid-template-columns:1fr;gap:12px}
+}
+@media(max-width:360px){
+  .container{width:min(calc(100% - 24px),var(--max-width))}
+  .site-header{min-height:86px}
+  .brand{font-size:25px}
+  .brand small{left:36px;top:27px;font-size:6px}
+  .theme-toggle{font-size:10px;letter-spacing:1.5px}
+  .search-section{margin-bottom:22px}
+  .search-bar{height:auto;padding:7px;flex-wrap:wrap}
+  .search-icon{margin-left:8px}
+  .search-bar input{width:calc(100% - 65px)}
+  .search-bar button{width:100%}
+  .planet-card{padding:22px;min-height:auto}
+  .planet-image-wrap{width:100px;height:100px}
+  .key-stats{padding:13px;gap:8px}
+  .key-stat strong{font-size:18px}
+  .secondary-stats{grid-template-columns:1fr 1fr;gap:15px 10px}
+  .section-heading p{font-size:12px}
+  .table-caption{font-size:12px}
+  .site-footer{flex-direction:column;gap:24px}}
+  
+  @media(max-width:390px){
+    .secondary-stats{grid-template-columns:1fr}
+    .planet-card{padding:18px}
+    .key-stats{grid-template-columns:1fr;gap:10px}}

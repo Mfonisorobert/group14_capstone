@@ -1,0 +1,110 @@
+# GROUP14_CAPSTONE — Team-Ready Planet Web App
+
+A responsive planet-information website built with **HTML, CSS and vanilla JavaScript**. No framework or build step is required.
+
+## Open the project
+
+1. Download or clone the repository.
+2. Open the `GROUP14_CAPSTONE` folder in VS Code.
+3. Open `index.html` in a browser, or install the VS Code **Live Server** extension, right-click `index.html`, and choose **Open with Live Server**.
+4. Internet access is currently required for the Google Fonts and planet photographs referenced by the page.
+
+## Project structure
+
+```text
+GROUP14_CAPSTONE/
+├── index.html
+├── README.md
+├── css/
+│   ├── base.css
+│   ├── header.css
+│   ├── search.css
+│   ├── planet-card.css
+│   ├── table.css
+│   ├── footer.css
+│   └── responsive.css
+├── javascript/
+│   ├── data.js
+│   ├── theme.js
+│   ├── planet-card.js
+│   ├── search.js
+│   └── table.js
+└── images/
+    ├── logo_black.svg
+    └── logo.svg
+```
+
+## What each file does
+
+- `index.html`: page structure and links to styles/scripts.
+- `css/base.css`: global colors, typography, reset and shared layout.
+- `css/header.css`: logo and light/dark theme control.
+- `css/search.css`: planet search bar and feedback messages.
+- `css/planet-card.css`: selected planet information and icons.
+- `css/table.css`: planetary comparison table.
+- `css/footer.css`: footer layout.
+- `css/responsive.css`: tablet and mobile adjustments.
+- `javascript/data.js`: shared planet information.
+- `javascript/theme.js`: theme switching, exact supplied SVG logo switching and saved preference.
+- `javascript/planet-card.js`: updates the planet information card.
+- `javascript/search.js`: search behavior.
+- `javascript/table.js`: builds the table and handles row selection.
+- `images/logo_black.svg`: supplied black logo for light mode.
+- `images/logo.svg`: supplied white logo for dark mode.
+
+## Team workflow
+
+### Ground rules
+
+1. Do not work directly on `main`.
+2. Pull the latest `main` before starting a new task.
+3. Create a branch for your task.
+4. Work mainly in the files assigned to you.
+5. Commit and push your branch.
+6. Open a Pull Request from your branch into `main`.
+7. The team lead reviews and merges Pull Requests.
+
+### First time on a member's computer
+
+```bash
+git clone https://github.com/YOUR-USERNAME/GROUP14_CAPSTONE.git
+cd GROUP14_CAPSTONE
+git switch -c feature/your-task
+```
+
+Replace the URL with the actual repository URL and replace `feature/your-task` with the branch assigned to you.
+
+### Save and share your work
+
+```bash
+git status
+git add .
+git commit -m "Describe the change"
+git push -u origin feature/your-task
+```
+
+Then open GitHub and create a Pull Request targeting `main`.
+
+### Start a new task later
+
+```bash
+git switch main
+git pull origin main
+git switch -c feature/new-task
+```
+
+### Suggested task branches
+
+- `feature/header-theme`
+- `feature/search`
+- `feature/planet-card`
+- `feature/planet-table`
+- `feature/footer`
+- `feature/responsive`
+
+## Coordination notes
+
+- Only the team lead should change `index.html` unless a change is agreed in advance.
+- Coordinate before editing a file assigned to another member.
+- If Git reports a merge conflict, stop and ask the team lead for help rather than deleting code at random.
+- Never commit passwords, API keys, or private credentials.

@@ -1,8 +1,23 @@
-.logo {
-    filter: none;
-    
-
+.site-header {
+  height: 68px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
-.dark .logo {
-    filter: invert(1)
+.brand { display: inline-flex; align-items: center; width: 68px; }
+.brand img { display: block; width: 68px; height: auto; }
+.theme-toggle {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+  border: 0;
+  padding: 5px 0 5px 8px;
+  background: transparent;
+  color: var(--text);
+  font-family: var(--mono);
+  font-size: 8px;
+  letter-spacing: 1.5px;
 }
+.theme-icon { width: 16px; height: 16px; display: grid; place-items: center; }
+.theme-icon svg { width: 14px; height: 14px; }

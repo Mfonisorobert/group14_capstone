@@ -1,19 +1,136 @@
+/*
+ * Shared planet data. Keep this file as the single source of truth for
+ * the information displayed in the planet card and comparison table.
+ */
 const planets = [
-    {
-        name: "Earth",
-        type: "Terrestrial",
-        gravity: "9.8",
-        mass: "1.000",
-        period: "365",
-        moons: "1"
-    },
-
-    {
-        name: "Mars",
-        type: "Terrestrial",
-        gravity: "3.7",
-        mass: "0.642",
-        period: "687",
-        moons: "2"
-    }
+  { 
+    name: "Mercury", 
+    type: "Terrestrial", 
+    description: "The smallest planet and closest to the Sun, with extreme temperature swings.", 
+    gravity: "3.7", 
+    mass: "0.000174", 
+    period: "88", 
+    temperature: "440", 
+    moons: "0", 
+    diameter: "4879", 
+    distance: "57.9", 
+    image: "https://anurella.github.io/images/planets/mercury.webp", 
+    group: "Terrestrial Planets" 
+  },
+  { 
+    name: "Venus", 
+    type: "Terrestrial", 
+    description: "The hottest planet, covered in thick clouds of sulfuric acid.", 
+    gravity: "8.9", 
+    mass: "0.00256", 
+    period: "225", 
+    temperature: "737", 
+    moons: "0", 
+    diameter: "12104", 
+    distance: "108.2", 
+    image: "https://anurella.github.io/images/planets/venus.webp", 
+    group: "Terrestrial Planets" 
+  },
+  { 
+    name: "Earth", 
+    type: "Terrestrial", 
+    description: "The only known planet to support life, with liquid water on its surface.", 
+    gravity: "9.8", 
+    mass: "0.00315", 
+    period: "365", 
+    temperature: "288", 
+    moons: "1", 
+    diameter: "12756", 
+    distance: "149.6", 
+    image: "https://anurella.github.io/images/planets/earth.jpg", 
+    group: "Terrestrial Planets" 
+  },
+  { 
+    name: "Mars", 
+    type: "Terrestrial", 
+    description: "The Red Planet, home to the largest volcano and canyon in the solar system.", 
+    gravity: "3.7", 
+    mass: "0.000338", 
+    period: "687", 
+    temperature: "208", 
+    moons: "2", 
+    diameter: "6792", 
+    distance: "227.9", 
+    image: "https://anurella.github.io/images/planets/mars.webp", 
+    group: "Terrestrial Planets" 
+  },
+  { 
+    name: "Jupiter", 
+    type: "Gas Giant", 
+    description: "The largest planet in the solar system, known for its Great Red Spot storm.", 
+    gravity: "23.1", 
+    mass: "1.0", 
+    period: "4333", 
+    temperature: "163", 
+    moons: "95", 
+    diameter: "142984", 
+    distance: "778.6", 
+    image: "https://anurella.github.io/images/planets/jupiter.webp", 
+    group: "Jovian Planets", 
+    subgroup: "Gas Giants" 
+  },
+  {
+    name: "Saturn",
+    type: "Gas Giant",
+    description: "Distinguished by its stunning ring system made of ice and rock.",
+    gravity: "9.0",
+    mass: "0.299",
+    period: "10759",
+    temperature: "133",
+    moons: "146",
+    diameter: "120536",
+    distance: "1,434",
+    image: "https://anurella.github.io/images/planets/saturn.webp",
+    group: "Jovian Planets",
+    subgroup: "Gas Giants"
+  },
+  {
+    name: "Uranus",
+    type: "Ice Giant",
+    description: "An ice giant that rotates on its side with a pale blue-green atmosphere.",
+    gravity: "8.7",
+    mass: "86.8",
+    period: "30,687",
+    temperature: "76",
+    moons: "28",
+    diameter: "50,724",
+    distance: "2,871",
+    image: "https://images.unsplash.com/photo-1614728894747-a83421e2b9c9?auto=format&fit=crop&w=500&q=85",
+    group: "Jovian Planets",
+    subgroup: "Ice Giants"
+  },
+  { 
+    name: "Neptune", 
+    type: "Ice Giant", 
+    description: "A distant, windy ice giant with a deep blue atmosphere and powerful storms.", 
+    gravity: "11.2", 
+    mass: "102.4", 
+    period: "60,190", 
+    temperature: "72", 
+    moons: "16", 
+    diameter: "49,244", 
+    distance: "4,495", 
+    image: "https://images.unsplash.com/photo-1614730321146-b6fa6a46bcb4?auto=format&fit=crop&w=500&q=85", 
+    group: "Jovian Planets", 
+    subgroup: "Ice Giants" 
+  },
+  { 
+    name: "Pluto", 
+    type: "Dwarf Planet", 
+    description: "A dwarf planet in the Kuiper Belt, far beyond the orbit of Neptune.", 
+    gravity: "0.6", 
+    mass: "0.013", 
+    period: "90,560", 
+    temperature: "44", 
+    moons: "5", 
+    diameter: "2,377", 
+    distance: "5,906", 
+    image: "images/Pluto.jpg", 
+    group: "Dwarf Planets" 
+  }
 ];

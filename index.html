@@ -1,162 +1,137 @@
 <!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Group14 Capstone Project</title>
-    
-    <link rel="stylesheet" href="css/table.css" />
-    <link rel="stylesheet" href="css/header.css" />
-    <!-- <link rel="stylesheet" href="css/base.css"> -->
-    <link rel="stylesheet" href="css/base.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Explore the planets and compare facts about our solar system.">
+  <title>Group14 Capstone Project</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/header.css">
+  <link rel="stylesheet" href="css/search.css">
+  <link rel="stylesheet" href="css/planet-card.css">
+  <link rel="stylesheet" href="css/table.css">
+  <link rel="stylesheet" href="css/footer.css">
+  <link rel="stylesheet" href="css/responsive.css">
 </head>
-
 <body>
-    <main class="wrap">
-        <header class="top">
-            <a class="logo" href="./" aria-label="Planet home">
-              
-              <img src="imgs/logo_black.svg" width="50" height="50">
-                <!-- <svg viewBox="0 0 40 28" width="44" height="30" aria-hidden="true"><ellipse cx="20" cy="15" rx="19" ry="6" transform="rotate(-18 20 15)" fill="none" stroke="currentColor" stroke-width="2.5"/><circle cx="20" cy="14" r="8" fill="currentColor"/></svg>
-                <span>planet</span> -->
-            
-              </a>
-            <button id="theme" class="theme" type="button" aria-label="Toggle theme">
-            <span id="themeLabel">LIGHT</span><span id="themeIcon" aria-hidden="true">☀</span>
-            </button>
-        </header>
+  <header class="site-header container">
+    <a class="brand" href="./" aria-label="Planet home">
+      <img id="brandLogo" src="images/logo_black.svg" alt="Planet">
+    </a>
+    <button class="theme-toggle" id="themeToggle" type="button" aria-label="Switch to dark mode" aria-pressed="false">
+      <span id="themeLabel">DARK</span>
+      <span class="theme-icon" id="themeIcon" aria-hidden="true"></span>
+    </button>
+  </header>
 
-        <form id="searchForm" class="search" role="search" novalidate>
-            <svg class="mag" viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><circle cx="10" cy="10" r="7" fill="none" stroke="currentColor" stroke-width="2"/><path d="M15 15l6 6" stroke="currentColor" stroke-width="2"/></svg>
-            <input id="q" type="text" placeholder="Search planet name…" aria-label="Search planet name" autocomplete="off">
-            <span id="err" class="err" hidden>No results</span>
-            <button type="submit">Search</button>
-        </form>
+  <main class="container">
+    <section class="search-section" aria-label="Planet search">
+      <form class="search-bar" id="searchForm">
+        <span class="search-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+            <circle cx="10.8" cy="10.8" r="7"></circle>
+            <path d="m16 16 5 5"></path>
+          </svg>
+        </span>
+        <input id="planetSearch" type="search" placeholder="Search planet name..." autocomplete="off" aria-label="Search planet name">
+        <button type="submit">Search</button>
+      </form>
+      <p class="search-message" id="searchMessage" aria-live="polite"></p>
+    </section>
 
-        <section id="result" aria-live="polite"></section>
-    
+    <section class="planet-card" id="planetCard" aria-live="polite">
+      <div class="planet-image-wrap">
+        <img id="planetImage" src="" alt="">
+      </div>
+      <div class="planet-content">
+        <div class="planet-heading">
+          <div class="planet-title">
+            <h1 id="planetName">Earth</h1>
+            <p id="planetType">Terrestrial</p>
+          </div>
+          <p class="planet-description" id="planetDescription"></p>
+        </div>
+        <div class="key-stats" aria-label="Key planetary facts">
+          <div class="key-stat"><span>Gravity</span><strong id="gravity"></strong></div>
+          <div class="key-stat"><span>Mass</span><strong id="mass"></strong></div>
+          <div class="key-stat"><span>Period</span><strong id="period"></strong></div>
+        </div>
+        <div class="secondary-stats">
+          <div class="secondary-stat">
+            <svg class="stat-svg thermometer" viewBox="0 0 24 24" aria-hidden="true"><path d="M14 14.8V5a3 3 0 0 0-6 0v9.8a5 5 0 1 0 6 0Z"></path><path d="M11 7v9"></path><path d="M17 5h4M17 9h3"></path></svg>
+            <span id="temperature"></span>
+          </div>
+          <div class="secondary-stat">
+            <svg class="stat-svg moon-svg" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.4 15.3A8.5 8.5 0 0 1 8.7 3.6 8.7 8.7 0 1 0 20.4 15.3Z" fill="currentColor" stroke="none"></path></svg>
+            <span id="moons"></span>
+          </div>
+          <div class="secondary-stat">
+            <svg class="stat-svg circle-svg" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9" fill="currentColor" stroke="none"></circle></svg>
+            <span id="diameter"></span>
+          </div>
+          <div class="secondary-stat">
+            <svg class="stat-svg sun-svg" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="3.5"></circle><path d="M12 2v3M12 19v3M2 12h3M19 12h3M4.9 4.9 7 7M17 17l2.1 2.1M19.1 4.9 17 7M7 17l-2.1 2.1"></path><path d="m9 3 .7 1.8M15 19.2 15.7 21M3 9l1.8.7M19.2 14.3 21 15M3 15l1.8-.7M19.2 9.7 21 9M9 21l.7-1.8M15 4.8 15.7 3"></path></svg>
+            <span id="distance"></span>
+          </div>
+        </div>
+      </div>
+    </section>
 
-    <!-- //html code for table -->
-    <section class="Planetglance" aria-labelledby="planet-glance-title">
-      <h2 class="planetglance_title" id="planet-glance-title">
-        Planetary Facts at a Glance
-      </h2>
-      <p class="PF-intro">
-        Below is a comparative table of major planets in our solar system. The
-        data highlights key physical properties used by astronomers and
-        researchers worldwide.
-      </p>
-      <p class="PF-From-NASA">
-        <b
-          >Data about the planets of our solar system (Planetary facts taken
-          from NASA)
-        </b>
-      </p>
-      <div class="table-wrap">
-        <table class="Table-facts">
+    <section class="facts-section">
+      <div class="section-heading">
+        <h2>Planetary Facts at a Glance</h2>
+        <p>Below is a comparative table of major planets in our solar system. The data highlights key physical properties used by astronomers and researchers worldwide.</p>
+      </div>
+      <p class="table-caption">Data about the planets of our solar system (Planetary facts taken from NASA)</p>
+      <div class="table-wrapper">
+        <table>
+          <colgroup>
+            <col class="group-col"><col class="subgroup-col"><col class="name-col"><col class="mass-col"><col class="diameter-col">
+          </colgroup>
           <thead>
-            <tr>
-              <th class="Table-facts_edge" colspan="2" scope="col"></th>
-              <th scope="col">Name</th>
-              <th scope="col">Mass (10 24kg)</th>
-              <th scope="col">Diameter (km)</th>
-            </tr>
+            <tr><th colspan="2" aria-label="Planet category"></th><th>Name</th><th>Mass (10<sup>24</sup>kg)</th><th>Diameter (km)</th></tr>
           </thead>
-          <tbody>
-            <tr>
-              <th class="planet-group" scope="row" colspan="2" rowspan="4">
-                Terrestrial planets
-              </th>
-              <td>Mercury</td>
-              <td>0.330</td>
-              <td>4,878</td>
-            </tr>
-            <tr>
-              <td>Venus</td>
-              <td>0.330</td>
-              <td>4,878</td>
-            </tr>
-            <tr>
-              <td>Earth</td>
-              <td>0.330</td>
-              <td>4,878</td>
-            </tr>
-            <tr>
-              <td>Mars</td>
-              <td>0.330</td>
-              <td>4,878</td>
-            </tr>
-            <tr>
-              <th class="planet-group" scope="rowgroup" rowspan="4">
-                Jovial Planets
-              </th>
-              <th class="planet-group" scope="rowgroup" rowspan="2">
-                Gas Giants
-              </th>
-              <td>Jupiter</td>
-              <td>0.330</td>
-              <td>4,878</td>
-            </tr>
-            <tr>
-              <td>Saturn</td>
-              <td>0,330</td>
-              <td>4,878</td>
-            </tr>
-            <tr>
-              <th class="planet-group" scope="rowgroup" rowspan="2">
-                Ice Giants
-              </th>
-              <td>Uranus</td>
-              <td>0.330</td>
-              <td>4,878</td>
-            </tr>
-            <tr>
-              <td>Neptune</td>
-              <td>0.330</td>
-              <td>4,878</td>
-            </tr>
-            <tr>
-              <th class="planet-group" scope="row" colspan="2">
-                Dwarf Planets
-              </th>
-              <td>Pluto</td>
-              <td>0.330</td>
-              <td>4,878</td>
-            </tr>
-          </tbody>
+          <tbody id="planetTableBody"></tbody>
         </table>
       </div>
     </section>
-    
-    
-    
-    <!-- FOOTER -->
+  </main>
 
-    <footer class="site-footer">
-      <section class="about">
-        <h2>About</h2>
-        <p>This Capstone Project is developed by the following group member:</p>
-        <ul class="members">
-            <li>Robert</li>
-            <li>Princewill</li>
-            <li>Vivian</li>
-            <li>Abdulrahman</li>
-            <li>Goodnews</li>
-            <li>Hazzan</li>
-            <li>Samuel</li>
-            <li>Olatuga</li>
-            <li>Bond</li>
-            <li>Ihimire</li>
-            <li>Nwachukwu</li>
-        </ul>   
-      </section>
-      <div class="credits">
-        <p>&copy; 2026 Design by <a href="https://amakandukwu.com" rel="noopener">Amaka N</a></p>
-        <p>Built by <a href="https://github.com/Mfonisorobert/group14_capstone.git" rel="noopener">Group 14</a>. All rights reserved</p>
-        <p><a href="https://tsacademyonline.com/"  rel="noopener">TSAcademy</a></p>
-      </div>
-    </footer>
-        
-    <script src="javascript/script.js"></script>
-  </body>
+  <footer class="site-footer container">
+    <div class="footer-about">
+      <h3>About</h3>
+      <p>Built as a collaborative front-end capstone project.</p>
+      <!-- <p id="teamNames">This Capstone Project is developed by the following group members:</p> -->
+      <!-- <p id="teamNames">Team members: <br>Robert, Princewill, Vivian, Abdulrahman, Goodnews, Hazzan, Samuel, Olatuga, Bond, Ihimire, Nwachukwu</p> -->
+      <ul class="members" id="teamNames">
+        <b>Team members:</b>
+        <li>Robert</li>
+        <li>Princewill</li>
+        <li>Vivian</li>
+        <li>Abdulrahman</li>
+        <li>Goodnews</li>
+        <li>Hazzan</li>
+        <li>Samuel</li>
+        <li>Olatuga</li>
+        <li>Bond</li>
+        <li>Ihimire</li>
+        <li>Nwachukwu</li>
+      </ul>
+    </div>
+    <div class="footer-right">
+      <p>© <span id="year"></span> Design by Amaka N</p>
+      <p>Built by <a href="https://github.com/Mfonisorobert/group14_capstone.git" rel="noopener">Group 14</a>. All rights reserved</p>
+      <p><a href="https://tsacademyonline.com/"  rel="noopener">TSAcademy</a></p>
+    </div>
+  </footer>
+
+  <script src="javascript/data.js"></script>
+  <script src="javascript/theme.js"></script>
+  <script src="javascript/planet-card.js"></script>
+  <script src="javascript/search.js"></script>
+  <script src="javascript/table.js"></script>
+</body>
 </html>
