@@ -1,13 +1,6 @@
-# GROUP14_CAPSTONE — Team-Ready Planet Web App
+# GROUP14_CAPSTONE PROJECT - Planet Web App
 
-A responsive planet-information website built with **HTML, CSS and vanilla JavaScript**. No framework or build step is required.
-
-## Open the project
-
-1. Download or clone the repository.
-2. Open the `GROUP14_CAPSTONE` folder in VS Code.
-3. Open `index.html` in a browser, or install the VS Code **Live Server** extension, right-click `index.html`, and choose **Open with Live Server**.
-4. Internet access is currently required for the Google Fonts and planet photographs referenced by the page.
+A responsive planet-information website built with **HTML, CSS and JavaScript**.
 
 ## Project structure
 
@@ -67,7 +60,7 @@ GROUP14_CAPSTONE/
 ### First time on a member's computer
 
 ```bash
-git clone https://github.com/YOUR-USERNAME/GROUP14_CAPSTONE.git
+git clone https://github.com/Mfonisorobert/GROUP14_CAPSTONE.git
 cd GROUP14_CAPSTONE
 git switch -c feature/your-task
 ```
